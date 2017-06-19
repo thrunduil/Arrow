@@ -43,5 +43,3 @@ kind of overloading of type functions, type constraints (in order to
 type check overload resolution in compile time), and effect system.
 A simple interpreter and shell is implemented. However implementation is
 not well tested.
-
-Currently Arrow language is not documented. 
