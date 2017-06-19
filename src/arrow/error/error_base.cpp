@@ -112,5 +112,4 @@ void error_base_msg::print_imports(std::ostream& os, const import_map& imports)
     };
 };
 
-
 }}
