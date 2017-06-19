@@ -1,0 +1,121 @@
+// $ANTLR 2.7.7 (2006-11-01): arrow.g -> arrow_vocabularyTokenTypes.txt$
+arrow_vocabulary    // output token vocab name
+TOK_semi(";")=4
+TOK_module="module"=5
+TOK_import="import"=6
+TOK_as=7
+TOK_val="val"=8
+TOK_overload="over"=9
+TOK_equal("=")=10
+TOK_extern="extern"=11
+TOK_lbracket="left bracket"=12
+TOK_comma(",")=13
+TOK_rbracket="right bracket"=14
+TOK_colon(":")=15
+TOK_double_arrow("=>")=16
+TOK_type="type"=17
+TOK_operator_declaration="operator"=18
+TOK_lcurly="left curly bracket"=19
+TOK_rcurly="right curly bracket"=20
+TOK_integer="integer literal"=21
+TOK_dcolon("::")=22
+TOK_arrow("->")=23
+TOK_plus("+")=24
+TOK_minus("-")=25
+TOK_lparen="left paren"=26
+TOK_rparen="right paren"=27
+TOK_kind="Kind"=28
+TOK_type_int="int"=29
+TOK_type_bool="bool"=30
+TOK_type_char="char"=31
+TOK_type_string="string"=32
+TOK_star("*")=33
+TOK_all="All"=34
+TOK_some="Some"=35
+TOK_rref="Ref"=36
+TOK_type_float="float"=37
+TOK_Record="Record"=38
+TOK_Variant="Variant"=39
+TOK_list="list"=40
+TOK_dot(".")=41
+TOK_operator="operator symbol"=42
+TOK_langle="left angle bracket"=43
+TOK_dot_langle(".<")=44
+TOK_rangle="right angle bracket"=45
+TOK_Fun="Fun"=46
+TOK_Rec="Rec"=47
+TOK_If="If"=48
+TOK_Then="Then"=49
+TOK_Else="Else"=50
+TOK_underscore("_")=51
+TOK_if="if"=52
+TOK_then="then"=53
+TOK_else="else"=54
+TOK_case="case"=55
+TOK_in="in"=56
+TOK_open="open"=57
+TOK_let="let"=58
+TOK_fun="fun"=59
+TOK_rec="rec"=60
+TOK_ref="ref"=61
+TOK_deref="deref"=62
+TOK_record="record"=63
+TOK_variant="variant"=64
+TOK_identifier="an identifier"=65
+TOK_string="string literal"=66
+TOK_bracket_dolar="bracket definition"=67
+TOK_bracket_assign_dolar="bracket assign definition"=68
+TOK_dot_bracket_dolar="dot bracket definition"=69
+TOK_dot_bracket_assign_dolar="dot bracket assign definition"=70
+TOK_opening_bracket="opening bracket"=71
+TOK_closing_bracket="closing bracket"=72
+TOK_char="character literal"=73
+LITERAL_true="true"=74
+LITERAL_false="false"=75
+TOK_number="number literal"=76
+Any="any token"=77
+UTF8_lead_byte="utf8 lead byte"=78
+UTF8_next_byte="utf8 next byte"=79
+UTF8_multibyte_char="utf8 multibyte"=80
+UTF8_not_line_break="utf8 not line break"=81
+UTF8_bom="utf8 bom"=82
+Shebang="shebang char"=83
+White_space="whitespace char"=84
+Line_break="line break"=85
+Comment="comment section"=86
+Line_comment="line comment"=87
+Block_comment="block comment"=88
+Double_quoted_string="double quoted string"=89
+Wysiwyg_string="wysiwig string"=90
+Escape_sequence="escape sequence"=91
+Escaped_char="escape char"=92
+Dec_integer_literal="decimal integer"=93
+Bin_integer_literal="binary integer"=94
+Oct_integer_literal="octal integer"=95
+Hex_integer_literal="hexal iteger"=96
+Dec_integer="decimal integer value"=97
+Dec_digit="decimal digit"=98
+Bin_prefix="bin prefix"=99
+Bin_integer="bin integer"=100
+Bin_digit="bin digit"=101
+Oct_prefix="octal prefix"=102
+Oct_integer="octal integer value"=103
+Oct_digit="octal digit"=104
+Hex_prefix="hexal prefix"=105
+Hex_integer="hexal integer"=106
+Hex_digit="hexal digit"=107
+Dec_floating_literal="decimal number"=108
+Hex_floating_literal="hexal number"=109
+Dec_exponent="decimal exponent"=110
+Hex_exponent="hexal exponent"=111
+String_literal="string literal rule"=112
+Character_literal="char literal"=113
+Identifier="an id"=114
+Identifier_start="id start"=115
+Block_comment_content="block comment content"=116
+Identifier_ascii="identifier ascii"=117
+Identifier_ascii_start="identifier ascii start"=118
+Operator_ascii_char="operator ascii character"=119
+Operator="an operator"=120
+Operator_char="operator character"=121
+Predefined_operator=122

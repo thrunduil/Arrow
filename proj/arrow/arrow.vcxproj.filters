@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{721697af-41b1-4efd-8be4-ea0f120da8fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\grammar">
+      <UniqueIdentifier>{c2d5261f-5698-426e-8979-7234e1d1c7e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\grammar\output">
+      <UniqueIdentifier>{a338a9e2-8497-4076-93e3-c9bb86b71884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include">
+      <UniqueIdentifier>{ed5c613e-40b7-4f44-90e1-4fa2c5ce7deb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ast">
+      <UniqueIdentifier>{4dc12b43-ae50-4af6-b792-af88c5f1dcce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\root">
+      <UniqueIdentifier>{b54eb4bc-db4b-4541-a492-19a262b03a90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\error">
+      <UniqueIdentifier>{56fe6fe3-1d44-45d4-ba8b-fbbad7156bf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scopes">
+      <UniqueIdentifier>{8aba357c-41cd-42ac-9fc5-2dca1d6f26af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\semantics">
+      <UniqueIdentifier>{4e8659b1-52d0-4d66-b0ff-fba98a255b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\semantics\typing">
+      <UniqueIdentifier>{26196285-6720-414f-9a59-bd2bc54b90b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\semantics\codegen">
+      <UniqueIdentifier>{69f58503-1085-442b-bbb0-4f4142ac224c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\semantics\typing\types">
+      <UniqueIdentifier>{098206a0-651b-4008-b6a8-06e81194fdde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\semantics\typing\terms">
+      <UniqueIdentifier>{ef874624-ad37-4638-80b0-a5eb88a0cd73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\arrow">
+      <UniqueIdentifier>{4bce9ce6-3659-4185-9d50-7432b36c7ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\arrow\ast">
+      <UniqueIdentifier>{b149e925-0adf-4a93-9abe-64c22bf2864e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\arrow\details">
+      <UniqueIdentifier>{9a0ef4fc-e69b-45c5-a3cf-b8464f072c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\semantics\operators">
+      <UniqueIdentifier>{2a6bc8ca-1c33-4881-a10f-74bae320219a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scopes\scope_builder">
+      <UniqueIdentifier>{c2928ce0-0f26-45bb-9f08-4df071b4ba97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scopes\closure_builder">
+      <UniqueIdentifier>{15a3cabf-cc40-4da3-88fd-3e377ce9c6d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\arrow\ast\ast_common.inl">
+      <Filter>Source Files\ast</Filter>
+    </None>
+    <None Include="..\..\src\arrow\ast\ast_definition.inl">
+      <Filter>Source Files\ast</Filter>
+    </None>
+    <None Include="..\..\src\arrow\ast\ast_kind.inl">
+      <Filter>Source Files\ast</Filter>
+    </None>
+    <None Include="..\..\src\arrow\ast\ast_other.inl">
+      <Filter>Source Files\ast</Filter>
+    </None>
+    <None Include="..\..\src\arrow\ast\ast_term.inl">
+      <Filter>Source Files\ast</Filter>
+    </None>
+    <None Include="..\..\src\arrow\ast\ast_type.inl">
+      <Filter>Source Files\ast</Filter>
+    </None>
+    <None Include="..\..\src\arrow\grammar\arrow.g">
+      <Filter>Source Files\grammar</Filter>
+    </None>
+    <None Include="..\..\src\arrow\include\arrow\details\ast.inl">
+      <Filter>Source Files\include\arrow\details</Filter>
+    </None>
+    <None Include="..\..\src\arrow\include\arrow\details\ast_base.inl">
+      <Filter>Source Files\include\arrow\details</Filter>
+    </None>
+    <None Include="..\..\src\arrow\include\arrow\details\ast_visitor.inl">
+      <Filter>Source Files\include\arrow\details</Filter>
+    </None>
+    <None Include="..\..\src\arrow\include\arrow\details\rewrite_visitor.inl">
+      <Filter>Source Files\include\arrow\details</Filter>
+    </None>
+    <None Include="..\..\src\arrow\include\arrow\details\traversal_visitor.inl">
+      <Filter>Source Files\include\arrow\details</Filter>
+    </None>
+    <None Include="..\..\src\arrow\scopes\symbol_data.inl">
+      <Filter>Source Files\scopes</Filter>
+    </None>
+    <None Include="..\..\src\arrow\semantics\operators\operator_parser_config.inl">
+      <Filter>Source Files\semantics\operators</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\arrow\error\error.h">
+      <Filter>Source Files\error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\error\error_formatter.h">
+      <Filter>Source Files\error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\grammar\output\arrow_vocabularyTokenTypes.hpp">
+      <Filter>Source Files\grammar\output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\grammar\output\lexer_arrow.hpp">
+      <Filter>Source Files\grammar\output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\grammar\output\parser_arrow.hpp">
+      <Filter>Source Files\grammar\output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\grammar\lexer_include.h">
+      <Filter>Source Files\grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\grammar\lexer_members.h">
+      <Filter>Source Files\grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\grammar\literal_parser.h">
+      <Filter>Source Files\grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\grammar\parser_include.h">
+      <Filter>Source Files\grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\grammar\parser_members.h">
+      <Filter>Source Files\grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\grammar\unicode.h">
+      <Filter>Source Files\grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast.h">
+      <Filter>Source Files\include\arrow\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_atoms.h">
+      <Filter>Source Files\include\arrow\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_definitions.h">
+      <Filter>Source Files\include\arrow\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_helpers.h">
+      <Filter>Source Files\include\arrow\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_kind.h">
+      <Filter>Source Files\include\arrow\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_other.h">
+      <Filter>Source Files\include\arrow\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_terms.h">
+      <Filter>Source Files\include\arrow\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_types.h">
+      <Filter>Source Files\include\arrow\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_visitor.h">
+      <Filter>Source Files\include\arrow\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\operators.h">
+      <Filter>Source Files\include\arrow\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\details\ast_base.h">
+      <Filter>Source Files\include\arrow\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\details\fwd_decls.h">
+      <Filter>Source Files\include\arrow\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\details\fwd_decls_ast.h">
+      <Filter>Source Files\include\arrow\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\config.h">
+      <Filter>Source Files\include\arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\error_handler.h">
+      <Filter>Source Files\include\arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\modules.h">
+      <Filter>Source Files\include\arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\include\arrow\parser.h">
+      <Filter>Source Files\include\arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\root\lib_paths.h">
+      <Filter>Source Files\root</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\root\modules_impl.h">
+      <Filter>Source Files\root</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\root\options.h">
+      <Filter>Source Files\root</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\closure_builder\closure_builder.h">
+      <Filter>Source Files\scopes\closure_builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\graph_builder_terms.h">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\graph_builder_types.h">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\insert_symbols.h">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\scope_builder.h">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\scope_builder_terms.h">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\scope_builder_types.h">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\extern_functions.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\graph.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\instantiation_table.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\local_def_substitution.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\local_scope.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\local_scope_impl.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\module.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\module_impl.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\operator_table.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\overload_set.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\overload_table.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\symbol_data.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\symbol_definition.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\type_table.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\scopes\type_var_scope.h">
+      <Filter>Source Files\scopes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\codegen\interpret_helpers.h">
+      <Filter>Source Files\semantics\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\codegen\interpret_vis.h">
+      <Filter>Source Files\semantics\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\codegen\interpreter.h">
+      <Filter>Source Files\semantics\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\codegen\store.h">
+      <Filter>Source Files\semantics\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\codegen\substitute_term_vis.h">
+      <Filter>Source Files\semantics\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\operators\operator_declaration.h">
+      <Filter>Source Files\semantics\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\operators\operator_parser.h">
+      <Filter>Source Files\semantics\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\operators\operator_parser_config.h">
+      <Filter>Source Files\semantics\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\operators\operator_parser_helpers.h">
+      <Filter>Source Files\semantics\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\close_term.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\instantiate_term.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\instantiate_vis.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\overload_resolution.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\substitution.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\term_check_helpers.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\term_check_vis.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\term_checker.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\type_checker.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\type_equaler.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\type_errors.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\unify_types_vis.h">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\bound_map.h">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\check_mu_type.h">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\computation_on_types.h">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\instantiate_type_kind.h">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\kind_checker.h">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\kind_checker_vis.h">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\kind_inference_context.h">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\normal_form_type.h">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\unifier_kinds.h">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\unify_kinds_vis.h">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\unify_subkinds_vis.h">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\desugaring.h">
+      <Filter>Source Files\semantics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\make_fresh_binders_type.h">
+      <Filter>Source Files\semantics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\print_type.h">
+      <Filter>Source Files\semantics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\semantics.h">
+      <Filter>Source Files\semantics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\unique_names_provider.h">
+      <Filter>Source Files\semantics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\semantics\utils.h">
+      <Filter>Source Files\semantics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrow\todo.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\arrow\ast\ast.cpp">
+      <Filter>Source Files\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\ast\ast_base.cpp">
+      <Filter>Source Files\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\ast\operators.cpp">
+      <Filter>Source Files\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\ast\rewriters.cpp">
+      <Filter>Source Files\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\error\error_base.cpp">
+      <Filter>Source Files\error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\error\error_formatter.cpp">
+      <Filter>Source Files\error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\error\kind_error.cpp">
+      <Filter>Source Files\error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\error\literal_error.cpp">
+      <Filter>Source Files\error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\error\operator_error.cpp">
+      <Filter>Source Files\error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\error\scope_error.cpp">
+      <Filter>Source Files\error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\error\type_error.cpp">
+      <Filter>Source Files\error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\grammar\output\lexer_arrow.cpp">
+      <Filter>Source Files\grammar\output</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\grammar\output\parser_arrow.cpp">
+      <Filter>Source Files\grammar\output</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\grammar\error_handler.cpp">
+      <Filter>Source Files\grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\grammar\lexer_members.cpp">
+      <Filter>Source Files\grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\grammar\literal_parser.cpp">
+      <Filter>Source Files\grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\grammar\parser_members.cpp">
+      <Filter>Source Files\grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\grammar\unicode.cpp">
+      <Filter>Source Files\grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\root\lib_paths.cpp">
+      <Filter>Source Files\root</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\root\modules.cpp">
+      <Filter>Source Files\root</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\root\parser.cpp">
+      <Filter>Source Files\root</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\closure_builder\closure_builder.cpp">
+      <Filter>Source Files\scopes\closure_builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\graph_builder_terms.cpp">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\graph_builder_types.cpp">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\insert_symbols.cpp">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\process_sequence.cpp">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\scope_builder.cpp">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\scope_builder_terms.cpp">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\scope_builder_types.cpp">
+      <Filter>Source Files\scopes\scope_builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\extern_functions.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\graph.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\instantiation_table.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\local_def_substitution.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\local_scope.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\module.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\module_impl.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\operator_table.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\overload_set.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\overload_table.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\symbol_definition.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\type_table.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\scopes\type_var_scope.cpp">
+      <Filter>Source Files\scopes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\codegen\interpret_helpers.cpp">
+      <Filter>Source Files\semantics\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\codegen\interpret_vis.cpp">
+      <Filter>Source Files\semantics\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\codegen\interpreter.cpp">
+      <Filter>Source Files\semantics\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\codegen\store.cpp">
+      <Filter>Source Files\semantics\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\codegen\substitute_term_vis.cpp">
+      <Filter>Source Files\semantics\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\operators\operator_declaration.cpp">
+      <Filter>Source Files\semantics\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\operators\operator_parser.cpp">
+      <Filter>Source Files\semantics\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\operators\operator_parser_config.cpp">
+      <Filter>Source Files\semantics\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\operators\operator_parser_helpers.cpp">
+      <Filter>Source Files\semantics\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\close_term.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\instantiate_term.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\instantiate_vis.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\overload_resolution.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\substitution.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\term_check_helpers.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\term_check_vis.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\term_check_vis_applic.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\term_check_vis_rules.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\term_checker.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\type_checker.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\type_equaler.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\type_errors.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\unify_types_vis.cpp">
+      <Filter>Source Files\semantics\typing\terms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\bound_map.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\check_mu_type.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\computation_on_types.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\instantiate_type_kind.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\kind_checker.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\kind_checker_vis.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\kind_checker_vis_rules.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\kind_errors.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\kind_inference_context.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\normal_form_type.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\unifier_kinds.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\unify_kinds_vis.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\unify_subkinds_vis.cpp">
+      <Filter>Source Files\semantics\typing\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\check_constraints.cpp">
+      <Filter>Source Files\semantics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\desugaring.cpp">
+      <Filter>Source Files\semantics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\make_fresh_binders_type.cpp">
+      <Filter>Source Files\semantics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\print_term.cpp">
+      <Filter>Source Files\semantics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\print_type.cpp">
+      <Filter>Source Files\semantics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\semantics.cpp">
+      <Filter>Source Files\semantics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\unique_names_provider.cpp">
+      <Filter>Source Files\semantics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrow\semantics\utils.cpp">
+      <Filter>Source Files\semantics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\src\arrow\grammar\output\arrow_vocabularyTokenTypes.txt">
+      <Filter>Source Files\grammar\output</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

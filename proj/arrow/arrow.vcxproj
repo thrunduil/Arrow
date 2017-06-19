@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\arrow\ast\ast_common.inl" />
+    <None Include="..\..\src\arrow\ast\ast_definition.inl" />
+    <None Include="..\..\src\arrow\ast\ast_kind.inl" />
+    <None Include="..\..\src\arrow\ast\ast_other.inl" />
+    <None Include="..\..\src\arrow\ast\ast_term.inl" />
+    <None Include="..\..\src\arrow\ast\ast_type.inl" />
+    <None Include="..\..\src\arrow\grammar\arrow.g" />
+    <None Include="..\..\src\arrow\include\arrow\details\ast.inl" />
+    <None Include="..\..\src\arrow\include\arrow\details\ast_base.inl" />
+    <None Include="..\..\src\arrow\include\arrow\details\ast_visitor.inl" />
+    <None Include="..\..\src\arrow\include\arrow\details\rewrite_visitor.inl" />
+    <None Include="..\..\src\arrow\include\arrow\details\traversal_visitor.inl" />
+    <None Include="..\..\src\arrow\scopes\symbol_data.inl" />
+    <None Include="..\..\src\arrow\semantics\operators\operator_parser_config.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\arrow\error\error.h" />
+    <ClInclude Include="..\..\src\arrow\error\error_formatter.h" />
+    <ClInclude Include="..\..\src\arrow\grammar\lexer_include.h" />
+    <ClInclude Include="..\..\src\arrow\grammar\lexer_members.h" />
+    <ClInclude Include="..\..\src\arrow\grammar\literal_parser.h" />
+    <ClInclude Include="..\..\src\arrow\grammar\output\arrow_vocabularyTokenTypes.hpp" />
+    <ClInclude Include="..\..\src\arrow\grammar\output\lexer_arrow.hpp" />
+    <ClInclude Include="..\..\src\arrow\grammar\output\parser_arrow.hpp" />
+    <ClInclude Include="..\..\src\arrow\grammar\parser_include.h" />
+    <ClInclude Include="..\..\src\arrow\grammar\parser_members.h" />
+    <ClInclude Include="..\..\src\arrow\grammar\unicode.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_atoms.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_definitions.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_helpers.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_kind.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_other.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_terms.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_types.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\ast_visitor.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\ast\operators.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\config.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\details\ast_base.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\details\fwd_decls.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\details\fwd_decls_ast.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\error_handler.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\modules.h" />
+    <ClInclude Include="..\..\src\arrow\include\arrow\parser.h" />
+    <ClInclude Include="..\..\src\arrow\root\lib_paths.h" />
+    <ClInclude Include="..\..\src\arrow\root\modules_impl.h" />
+    <ClInclude Include="..\..\src\arrow\root\options.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\closure_builder\closure_builder.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\extern_functions.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\graph.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\instantiation_table.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\local_def_substitution.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\local_scope.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\local_scope_impl.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\module.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\module_impl.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\operator_table.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\overload_set.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\overload_table.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\graph_builder_terms.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\graph_builder_types.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\insert_symbols.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\scope_builder.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\scope_builder_terms.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\scope_builder\scope_builder_types.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\symbol_data.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\symbol_definition.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\type_table.h" />
+    <ClInclude Include="..\..\src\arrow\scopes\type_var_scope.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\codegen\interpreter.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\codegen\interpret_helpers.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\codegen\interpret_vis.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\codegen\store.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\codegen\substitute_term_vis.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\desugaring.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\make_fresh_binders_type.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\operators\operator_declaration.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\operators\operator_parser.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\operators\operator_parser_config.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\operators\operator_parser_helpers.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\print_type.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\semantics.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\close_term.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\instantiate_term.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\instantiate_vis.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\overload_resolution.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\substitution.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\term_checker.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\term_check_helpers.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\term_check_vis.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\type_checker.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\type_equaler.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\type_errors.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\terms\unify_types_vis.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\bound_map.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\check_mu_type.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\computation_on_types.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\instantiate_type_kind.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\kind_checker.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\kind_checker_vis.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\kind_inference_context.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\normal_form_type.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\unifier_kinds.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\unify_kinds_vis.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\typing\types\unify_subkinds_vis.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\unique_names_provider.h" />
+    <ClInclude Include="..\..\src\arrow\semantics\utils.h" />
+    <ClInclude Include="..\..\src\arrow\todo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\arrow\ast\ast.cpp" />
+    <ClCompile Include="..\..\src\arrow\ast\ast_base.cpp" />
+    <ClCompile Include="..\..\src\arrow\ast\operators.cpp" />
+    <ClCompile Include="..\..\src\arrow\ast\rewriters.cpp" />
+    <ClCompile Include="..\..\src\arrow\error\error_base.cpp" />
+    <ClCompile Include="..\..\src\arrow\error\error_formatter.cpp" />
+    <ClCompile Include="..\..\src\arrow\error\kind_error.cpp" />
+    <ClCompile Include="..\..\src\arrow\error\literal_error.cpp" />
+    <ClCompile Include="..\..\src\arrow\error\operator_error.cpp" />
+    <ClCompile Include="..\..\src\arrow\error\scope_error.cpp" />
+    <ClCompile Include="..\..\src\arrow\error\type_error.cpp" />
+    <ClCompile Include="..\..\src\arrow\grammar\error_handler.cpp" />
+    <ClCompile Include="..\..\src\arrow\grammar\lexer_members.cpp" />
+    <ClCompile Include="..\..\src\arrow\grammar\literal_parser.cpp" />
+    <ClCompile Include="..\..\src\arrow\grammar\output\lexer_arrow.cpp" />
+    <ClCompile Include="..\..\src\arrow\grammar\output\parser_arrow.cpp" />
+    <ClCompile Include="..\..\src\arrow\grammar\parser_members.cpp" />
+    <ClCompile Include="..\..\src\arrow\grammar\unicode.cpp" />
+    <ClCompile Include="..\..\src\arrow\root\lib_paths.cpp" />
+    <ClCompile Include="..\..\src\arrow\root\modules.cpp" />
+    <ClCompile Include="..\..\src\arrow\root\parser.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\closure_builder\closure_builder.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\extern_functions.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\graph.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\instantiation_table.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\local_def_substitution.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\local_scope.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\module.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\module_impl.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\operator_table.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\overload_set.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\overload_table.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\graph_builder_terms.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\graph_builder_types.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\insert_symbols.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\process_sequence.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\scope_builder.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\scope_builder_terms.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\scope_builder\scope_builder_types.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\symbol_definition.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\type_table.cpp" />
+    <ClCompile Include="..\..\src\arrow\scopes\type_var_scope.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\check_constraints.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\codegen\interpreter.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\codegen\interpret_helpers.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\codegen\interpret_vis.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\codegen\store.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\codegen\substitute_term_vis.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\desugaring.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\make_fresh_binders_type.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\operators\operator_declaration.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\operators\operator_parser.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\operators\operator_parser_config.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\operators\operator_parser_helpers.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\print_term.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\print_type.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\semantics.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\close_term.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\instantiate_term.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\instantiate_vis.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\overload_resolution.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\substitution.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\term_checker.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\term_check_helpers.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\term_check_vis.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\term_check_vis_applic.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\term_check_vis_rules.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\type_checker.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\type_equaler.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\type_errors.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\terms\unify_types_vis.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\bound_map.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\check_mu_type.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\computation_on_types.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\instantiate_type_kind.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\kind_checker.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\kind_checker_vis.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\kind_checker_vis_rules.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\kind_errors.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\kind_inference_context.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\normal_form_type.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\unifier_kinds.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\unify_kinds_vis.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\typing\types\unify_subkinds_vis.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\unique_names_provider.cpp" />
+    <ClCompile Include="..\..\src\arrow\semantics\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\src\arrow\grammar\output\arrow_vocabularyTokenTypes.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{905E6AEF-ABDB-4EB8-9CBF-9B30ED7F90C4}</ProjectGuid>
+    <RootNamespace>symbolic</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectName>arrow</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).$(Configuration).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).$(Configuration).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).$(Configuration).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).$(Configuration).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).$(Configuration).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).$(Configuration).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\..\..\..\Users\thrunduil\AppData\Local\Microsoft\MSBuild\v4.0\Microsoft.Cpp.x64.Debug.user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IncludePath);$(boost_dir)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(LibraryPath);$(boost_lib_x64)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IncludePath);$(boost_dir)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(LibraryPath);$(boost_lib_x64)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\arrow;..\..\src\arrow\include;C:\C++\libs\unicode\icu4c-58_2-src\icu\source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB=1;WIN32;_DEBUG;_LIB;ARROW_EXPORTS;DEBUG_EXPR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>region.lib;antlr.lib;libboost_system.lib;libboost_filesystem.lib;icuuc.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\C++\libs\unicode\icu4c-58_2-src\icu\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\arrow;..\..\src\arrow\include;C:\C++\libs\unicode\icu4c-58_2-src\icu\source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB=1;WIN64;_DEBUG;_LIB;ARROW_EXPORTS;DEBUG_EXPR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile />
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>region.lib;antlr.lib;libboost_system.lib;libboost_filesystem.lib;icuuc.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\C++\libs\unicode\icu4c-58_2-src\icu\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\arrow;..\..\src\arrow\include;C:\C++\libs\unicode\icu4c-58_2-src\icu\source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB=1;ARROW_EXPORTS;DEBUG_EXPR;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <AdditionalDependencies>region.lib;antlr.lib;libboost_system.lib;libboost_filesystem.lib;icuuc.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\C++\libs\unicode\icu4c-58_2-src\icu\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\arrow;..\..\src\arrow\include;C:\C++\libs\unicode\icu4c-58_2-src\icu\source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB=1;WIN64;NDEBUG;_LIB;ARROW_EXPORTS;DEBUG_EXPR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <AdditionalDependencies>region.lib;antlr.lib;libboost_system.lib;libboost_filesystem.lib;icuuc.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\C++\libs\unicode\icu4c-58_2-src\icu\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
