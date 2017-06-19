@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\README.md" />
     <None Include="..\..\src\arrow\ast\ast_common.inl" />
     <None Include="..\..\src\arrow\ast\ast_definition.inl" />
     <None Include="..\..\src\arrow\ast\ast_kind.inl" />
