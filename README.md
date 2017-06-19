@@ -37,7 +37,7 @@ More examples and simple tests can be found in scr/test/fcore.
 
 ## Status
 
-The Arrow language is at early stage of developments. Core type system
+The Arrow library is at early stage of developments. Core type system
 is mostly finished, but a few extensions are required, especially some
 kind of overloading of type functions, type constraints (in order to 
 type check overload resolution in compile time), and effect system.
