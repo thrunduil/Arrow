@@ -8,10 +8,10 @@
 1. Visual Studio 2015 or later. Source code in principle can be 
     compiled using other compilers, but compiler independent
     build system is not available currently.    
-2. Boost library. Only version 1.62 was tested
+2. Boost library. Tested version: 1.62.
 3. ICU library (International Components for Unicode). Tested version:
     58.2.    
-4. ANTLR version 2.7.
+4. ANTLR version 2.7
 
 ------------------------------------------------------------------
                     BUILD
