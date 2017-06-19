@@ -102,6 +102,9 @@
     <None Include="..\..\src\arrow\semantics\operators\operator_parser_config.inl">
       <Filter>Source Files\semantics\operators</Filter>
     </None>
+    <None Include="..\..\README.md">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\arrow\error\error.h">

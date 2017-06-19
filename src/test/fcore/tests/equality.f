@@ -35,7 +35,7 @@ refl2       : All[A:k] Eq2 A A
 
 Kind[k]
 elim_eq     : All[A:k, B:k] (Eq2 A B) -> All[Rho:k->k->*] (All[Gam:k] Rho Gam Gam) -> Rho A B
-            = All[A:k, B:k] fun[e: Eq2 A B] => All[Rho : k->k->*] fun[f : All[Gam:k] Rho Gam Gam] => e. <Rho> f;
+            = All[A:k, B:k] fun[e: Eq2 A B] => All[Rho : k->k->*] fun[f : All[Gam:k] Rho Gam Gam] => e.<Rho> f;
             
 Kind[k]
 beta        = All[A : k, G : k->k->*] fun[f : All[B:k] G B B] => if true then (elim_eq.<A,A> refl2.<A>).<G> f else f.<A>;
