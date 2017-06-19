@@ -31,3 +31,7 @@ msvs
 *.vsp
 *.iobj
 *.ipdb
+Win32/Debug/lib/predefined.f
+Win32/Release/lib/predefined.f
+x64/Debug/lib/predefined.f
+x64/Release/lib/predefined.f
