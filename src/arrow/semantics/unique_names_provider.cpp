@@ -1,5 +1,5 @@
 /* 
- *  This file is a part of Hasky Lib.
+ *  This file is a part of Arrow library.
  *
  *  Copyright (c) Pawe³ Kowal 2017
  *
