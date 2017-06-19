@@ -1,0 +1,48 @@
+type T1 = Fun{x:*,y:*,z:*} => z;
+//x1  : T1 Int Int Int;
+x2  : T1 {} Int Int Int;
+x3  : T1 Int {} Int Int;
+x4  : T1 Int Int {} Int;
+x5  : T1 Int Int Int {};
+x6  : T1 {Int} Int Int;
+x7  : T1 Int {Int} Int;
+x8  : T1 Int Int {Int};
+x9  : T1 {Int Int} Int;
+x10 : T1 Int {Int Int};
+x11 : T1 {Int Int Int};
+
+type VarList1 : [*] -> *
+            = Fun{L} => Int;
+x : VarList1 Int Int Int = 1;
+
+type VarList2 : * -> [*]
+    = Fun{X} => {Int, String, Bool};
+
+type EvalListHead : All[k] k -> [k] -> k
+    = Fun{h, L} => h;
+
+type EvalListTail : All[k] k -> [k] -> [k]
+    = Fun{h, L} => L;
+type EvalListHelp : All[k] [k] -> [k]
+    = Fun{L} => L;
+                
+type ListHead : All[k] [k] -> k
+    = Fun{L} => EvalListHead (open L);
+    
+type ListTail : All[k] [k] -> [k]
+    = Fun{L} => EvalListTail (open L);
+    
+type ListCons : All[k] k -> [k] -> [k]
+    = Fun{l, L} => EvalListHelp l (open L);
+    
+type ListMerge : All[k] [k] -> [k] -> [k]
+    = Fun{L1, L2} => EvalListHelp (open L1) (open L2);
+
+type ListConcat : All[k] [[k]] -> [k]
+    = Fun{L} => ListMerge EvalListHelp (open (open L));
+
+type Lit1       = 1;
+    
+test_list : ListMerge {Int, Int} {Bool, Int};
+test_list2 : ListConcat {Int, Int} {Bool, Int} {} {String, [Int], Int->Int};
+    
