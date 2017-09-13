@@ -21,3 +21,7 @@
 2. Project files must be modified in order to set up paths to
     required external libraries
 3. Folder bin/Win64 contains prebuilt binaries for 64-bit Windows.
+
+
+Copyright (C) 2017  Paweł Kowal
+email: thrunduil@gmail.com
