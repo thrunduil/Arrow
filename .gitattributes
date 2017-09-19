@@ -1,4 +1,4 @@
-linguist-language=C++
+antlr/* linguist-vendored
 
 #sources
 *.c text
