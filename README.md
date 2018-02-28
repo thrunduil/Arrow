@@ -3,6 +3,8 @@
 Progamming language based on the system F-omega with polymorphic kinds, 
 (weakly) equirecursive types, general function overloading, type inference, and flexible syntax.
 
+This library is a part of the Morfa project. See morfalang.org.
+
 ## Code example
 
 Equality encoding:
