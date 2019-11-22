@@ -21,8 +21,8 @@
 #include "arrow/ast/ast.h"
 #include <sstream>
 #include "boost/functional/hash.hpp"
-#include "mmlib_internals/hash_table/object_table.inl"
-#include "mmlib_internals/hash_table/hash_equal.inl"
+#include "matcl-core/details/hash_table/object_table.inl"
+#include "matcl-core/details/hash_table/hash_equal.inl"
 
 namespace arrow { namespace ast
 {
@@ -100,13 +100,23 @@ struct identifier_ptr
     static identifier_ptr   make(identifier_impl* p) { return identifier_ptr{p}; };
 };
 
+// default allocator;
+struct object_table_default_allocator
+{
+    using size_type         = std::size_t;
+    using difference_type   = std::ptrdiff_t;
+
+    static char* malloc(size_t n_bytes) { return new char[n_bytes];}
+    static void  free(void* ptr)        { delete[] (char*)ptr;}
+};
+
 class identifier_table
 {
     private:        
-        using string_hash   = mmlib::details::obj_hasher<identifier_impl>;
-        using string_equal  = mmlib::details::obj_equaler<identifier_impl>;
-        using string_table  = mmlib::details::object_table<identifier_ptr,string_hash,string_equal,
-                                                mmlib::details::default_allocator>;
+        using alloc         = object_table_default_allocator;
+        using string_hash   = matcl::details::obj_hasher<identifier_impl>;
+        using string_equal  = matcl::details::obj_equaler<identifier_impl>;
+        using string_table  = matcl::details::object_table<identifier_ptr,string_hash,string_equal,alloc>;
 
     private:
         string_table        m_table;

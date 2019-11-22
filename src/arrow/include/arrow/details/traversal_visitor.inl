@@ -21,6 +21,8 @@
 
 #include "arrow/ast/ast_visitor.h"
 
+#include <utility>
+
 namespace arrow { namespace ast
 {
 
@@ -716,9 +718,9 @@ void traversal_visitor<Derived>::eval(const type_sequence& ast, Args&& ... args)
             case item_type::type_applic_item:
             {
                 using type_vec          = std::vector<type>;
-                const type_vec& args    = e.get_type_applic_args();
+                const type_vec& args2   = e.get_type_applic_args();
 
-                for (const type& elem: args)
+                for (const type& elem: args2)
                     visit(elem, std::forward<Args>(args)...);
 
                 break;
@@ -727,9 +729,9 @@ void traversal_visitor<Derived>::eval(const type_sequence& ast, Args&& ... args)
             case item_type::kind_applic_item:
             {
                 using kind_vec          = std::vector<kind>;
-                const kind_vec& args    = e.get_kind_applic_args();
+                const kind_vec& args2   = e.get_kind_applic_args();
 
-                for (const kind& elem: args)
+                for (const kind& elem: args2)
                     visit(elem, std::forward<Args>(args)...);
 
                 break;

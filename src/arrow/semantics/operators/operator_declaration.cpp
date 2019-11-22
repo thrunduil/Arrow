@@ -22,6 +22,9 @@
 #include "operator_declaration.h"
 #include "error/error.h"
 
+#include <stdexcept>
+#include <iostream>
+
 namespace arrow { namespace oper
 {
 

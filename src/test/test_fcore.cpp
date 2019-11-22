@@ -33,14 +33,14 @@ tester_fcore::get_error_handler_null()
 
 void tester_fcore::make()
 {
-    std::string lib_path    = "C:/coding/sources/symbolic/src/test/fcore/tests";
+    std::string lib_path    = "C:/coding/public/arrow/src/test/fcore/tests";
 
-    std::string path    = "C:/coding/sources/symbolic/src/test/fcore/tests/equality.f";
-    //std::string path    = "C:/coding/sources/symbolic/src/test/fcore/tests/bools_with_existentials.f";
-    //std::string path    = "C:/coding/sources/symbolic/src/test/fcore/tests/primitive.f";
-    //std::string path    = "C:/coding/sources/symbolic/src/test/fcore/tests/test.f";
-    //std::string path    = "C:/coding/sources/symbolic/src/test/fcore/tests/test_existentials.f";
-    //std::string path    = "C:/coding/sources/symbolic/src/test/fcore/tests/test_module.f";
+    std::string path    = "C:/coding/public/arrow/src/test/fcore/tests/equality.f";
+    //std::string path    = "C:/coding/public/arrow/src/test/fcore/tests/bools_with_existentials.f";
+    //std::string path    = "C:/coding/public/arrow/src/test/fcore/tests/primitive.f";
+    //std::string path    = "C:/coding/public/arrow/src/test/fcore/tests/test.f";
+    //std::string path    = "C:/coding/public/arrow/src/test/fcore/tests/test_existentials.f";
+    //std::string path    = "C:/coding/public/arrow/src/test/fcore/tests/test_module.f";
 
     arrow::ast::term x  = arrow::ast::int_literal(arrow::ast::location(), 1);
     arrow::ast::term y  = arrow::ast::int_literal(arrow::ast::location(), 2);
@@ -62,7 +62,7 @@ void tester_fcore::make()
         std::cout << ex.what() << "\n";
     }
 
-    parse_dir("C:/coding/sources/symbolic/src/test/fcore/tests", true);
+    parse_dir("C:/coding/public/arrow/src/test/fcore/tests", true);
 
     std::cout << "finished" << "\n";
 };

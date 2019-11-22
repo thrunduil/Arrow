@@ -20,6 +20,7 @@
 #pragma once
 
 #include "arrow/ast/ast_visitor.h"
+#include  <stdexcept>
 
 namespace arrow { namespace ast
 {

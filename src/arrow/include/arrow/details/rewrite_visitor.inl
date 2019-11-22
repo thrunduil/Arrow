@@ -1103,10 +1103,10 @@ auto rewrite_visitor<Derived>::eval(const type_sequence& ast, Args&& ... args)
             case item_type::type_applic_item:
             {
                 using type_vec          = std::vector<type>;
-                const type_vec& args    = e.get_type_applic_args();
+                const type_vec& args2   = e.get_type_applic_args();
                 type_vec arg2;
 
-                for (const type& elem: args)
+                for (const type& elem: args2)
                 {
                     type elem2          = visit(elem, std::forward<Args>(args)...);
                     changed             |= elem2 != elem;
@@ -1120,10 +1120,10 @@ auto rewrite_visitor<Derived>::eval(const type_sequence& ast, Args&& ... args)
             case item_type::kind_applic_item:
             {
                 using kind_vec          = std::vector<kind>;
-                const kind_vec& args    = e.get_kind_applic_args();
+                const kind_vec& args2   = e.get_kind_applic_args();
                 kind_vec arg2;
 
-                for (const kind& elem: args)
+                for (const kind& elem: args2)
                 {
                     kind elem2          = visit(elem, std::forward<Args>(args)...);
                     changed             |= elem2 != elem;
@@ -1618,10 +1618,10 @@ auto rewrite_visitor<Derived>::eval(const term_sequence& ast, Args&& ... args)
             case item_type::type_applic_item:
             {
                 using type_vec          = std::vector<type>;
-                const type_vec& args    = e.get_type_applic_args();
+                const type_vec& args2   = e.get_type_applic_args();
                 type_vec arg2;
 
-                for (const type& elem: args)
+                for (const type& elem: args2)
                 {
                     type elem2          = visit(elem, std::forward<Args>(args)...);
                     changed             |= elem2 != elem;
@@ -1635,10 +1635,10 @@ auto rewrite_visitor<Derived>::eval(const term_sequence& ast, Args&& ... args)
             case item_type::kind_applic_item:
             {
                 using kind_vec          = std::vector<kind>;
-                const kind_vec& args    = e.get_kind_applic_args();
+                const kind_vec& args2   = e.get_kind_applic_args();
                 kind_vec arg2;
 
-                for (const kind& elem: args)
+                for (const kind& elem: args2)
                 {
                     kind elem2          = visit(elem, std::forward<Args>(args)...);
                     changed             |= elem2 != elem;

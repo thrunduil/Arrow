@@ -20,6 +20,7 @@
 #pragma once
 
 #include "symbol_data.h"
+#include  <stdexcept>
 
 namespace arrow { namespace details
 {

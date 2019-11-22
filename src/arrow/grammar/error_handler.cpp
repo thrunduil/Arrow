@@ -20,6 +20,7 @@
 #pragma once
 
 #include "arrow/error_handler.h"
+#include <iostream>
 
 namespace arrow
 {

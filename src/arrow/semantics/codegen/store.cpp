@@ -20,6 +20,7 @@
 #pragma once
 
 #include "store.h"
+#include <stdexcept>
 
 namespace arrow { namespace codegen
 {

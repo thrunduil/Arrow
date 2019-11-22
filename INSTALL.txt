@@ -12,6 +12,7 @@
 3. ICU library (International Components for Unicode). Tested version:
     58.2.    
 4. ANTLR version 2.7
+5. matcl library, https://bitbucket.org/matcl/matcl/src 
 
 ------------------------------------------------------------------
                     BUILD
