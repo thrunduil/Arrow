@@ -1,7 +1,7 @@
 /* 
  *  This file is a part of Hasky Lib.
  *
- *  Copyright (c) Pawe³ Kowal 2017
+ *  Copyright (c) Pawe³ Kowal 2017 - 2021
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
